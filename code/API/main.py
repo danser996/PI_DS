@@ -6,7 +6,7 @@ from typing import Optional
 from datetime import datetime
 
 # cargamos base de datos como dataframe
-# data = pd.read_csv("D:\DataScience\PI\Process\Dataset_def\dt_movies.csv", index_col=0)
+data = pd.read_csv("Dataset_def\data_API.csv", index_col=0)
 # print(data)
 
 # cambiar a tipo fecha la columna release_Date
@@ -33,7 +33,7 @@ def cantidad_filmaciones_mes(mes:Validation):
 @app.get('/cantidad_filmaciones_dia{dia}')
 def cantidad_filmaciones_dia(dia:Validation):
     '''Se ingresa el dia y la funcion retorna la cantidad de 
-    peliculas que se estrebaron ese dia historicamente'''
+    peliculas que se estrenaron ese dia historicamente'''
     return {'dia':dia, 'cantidad':respuesta}
 
 @app.get('/score_titulo/{titulo}')
@@ -73,9 +73,6 @@ def get_director(nombre_director:Validation):
 def recomendacion(titulo:Validation):
     '''Ingresas un nombre de pelicula y te recomienda las similares en una lista'''
     return {'lista recomendada': respuesta}
-
-
-
 
 
 
