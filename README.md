@@ -52,8 +52,8 @@ La similaridadd del coseno es una medida utilizada en el procesamiento del lengu
 
 El resultado de la similaridad del coseno es un valor entre -1 y 1. Un valor de 1 indica una similitud perfecta entre los vectores, mientras que un valor de -1 indica una similitud completamente opuesta. Un valor cercano a 0 indica poca similitud entre los vectores.
 
-<!-- ![Similaridad coseno](/src/SIM_COSINE.png) -->
-<p align=center><img src=https://www.researchgate.net/publication/349063822/figure/fig1/AS:1044142427758594@1625954362185/Geometrical-representation-of-the-cosine-similarity-measures.jpg><p>
+![Similaridad coseno](/src/SIM_COSINE.png)
+
 
 * Se utilizo el modulo Scikit-learn y la clase TfidfVectorizer de sklearn para calcular la frecuencia de las palabras que aparecen en el campo tags y se ignoraron todas las palabras comunes del ingles(stopwords) ya que no aportar valor a mi modelamiento.
 
