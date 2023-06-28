@@ -25,7 +25,9 @@ Se empezo desde cero, haciendo un trabajo de Data Engineer 🤯, se inicia con e
 
 Todo este proceso se encuentra en [proceso ETL](https://github.com/danser996/PI_DS/tree/master/code)
 
-![Proceso ETL](/src/ETL.jfif)
+<!-- ![Proceso ETL](/src/ETL.jfif) -->
+
+<p align=center><img src=https://tableauperu.com/wp-content/uploads/2021/10/que-es-etl-1024x1024.png><p>
 
 ## - Sistema de recomendacion de peliculas
 ### Tratamiento de campos usados para el modelo ML
@@ -50,11 +52,13 @@ La similaridadd del coseno es una medida utilizada en el procesamiento del lengu
 
 El resultado de la similaridad del coseno es un valor entre -1 y 1. Un valor de 1 indica una similitud perfecta entre los vectores, mientras que un valor de -1 indica una similitud completamente opuesta. Un valor cercano a 0 indica poca similitud entre los vectores.
 
-![Similaridad coseno](/src/SIM_COSINE.png)
+<!-- ![Similaridad coseno](/src/SIM_COSINE.png) -->
+<p align=center><img src=https://www.researchgate.net/publication/349063822/figure/fig1/AS:1044142427758594@1625954362185/Geometrical-representation-of-the-cosine-similarity-measures.jpg><p>
 
 * Se utilizo el modulo Scikit-learn y la clase TfidfVectorizer de sklearn para calcular la frecuencia de las palabras que aparecen en el campo tags y se ignoraron todas las palabras comunes del ingles(stopwords) ya que no aportar valor a mi modelamiento.
 
-![Sklearn modulo](/src/skl.png)
+<!-- ![Sklearn modulo](/src/skl.png) -->
+<p align=center><img src=https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg><p>
 
 ```python
 tfidf = TfidfVectorizer(stop_words='english')
@@ -86,7 +90,8 @@ Todo este proceso se encuentra en [Modelo ML](https://github.com/danser996/PI_DS
 * API es el acrónimo de "Application Programming Interface" (Interfaz de Programación de Aplicaciones). Se trata de un conjunto de reglas y protocolos que permite a diferentes aplicaciones y sistemas comunicarse e interactuar entre sí de manera estandarizada.
 Una API define las funciones y métodos que una aplicación proporciona para que otros programas puedan utilizar sus servicios y acceder a sus datos de manera controlada. Funciona como una capa de abstracción que permite a los desarrolladores utilizar ciertas funcionalidades de una aplicación o servicio sin necesidad de conocer todos los detalles internos de su implementación.
 
-![API](/src/appmaster.avif)
+<!-- ![API](/src/appmaster.avif) -->
+<p align=center><img src=https://appmaster.io/cdn-cgi/image/width=768,quality=83,format=auto/api/_files/PqV7MuNwv89GrZvBd4LNNK/download/><p>
 
 * Para desarrollar la API, se optó por utilizar FastAPI, un framework rápido y eficiente en Python. Se hizo uso del potencial del DataFrame de Python para manipular y analizar los datos necesarios.
 
