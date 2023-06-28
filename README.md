@@ -4,7 +4,7 @@
 
 <h1 align=center> Proyecto Individual #1 Data Science - MLOps </h1>
 
-<h2 align=center> En que consiste el proyecto</h2>
+<h2 align=center> En que consiste el proyecto :point_right:</h2>
 
 A partir de 2 bases de datos no estructuradas de peliculas, se realizo el proceso ETL, se realizo un modelo de ML basado en contenido  para la recomendación de peliculas y se dispuso de todo este tratamiento en una API para se sea consumida por cualquier departamento de la compañia.
 
@@ -12,7 +12,7 @@ A partir de 2 bases de datos no estructuradas de peliculas, se realizo el proces
 <img src="https://user-images.githubusercontent.com/67664604/217914153-1eb00e25-ac08-4dfa-aaf8-53c09038f082.png"  height=300>
 </p>
 
-<h1 align=center>Desarrollo del trabajo</h1>
+<h1 align=center>Desarrollo del trabajo :construction_worker:</h1>
 
 # - **Extracción, transformacion y carga - ETL**
 
@@ -32,8 +32,8 @@ Todo el proceso ETL se encuentra en [proceso ETL](https://github.com/danser996/P
 
 <p align=center><img src=https://tableauperu.com/wp-content/uploads/2021/10/que-es-etl-1024x1024.png><p>
 
-## - **Sistema de recomendacion de peliculas**
-### Tratamiento de campos usados para el modelo ML
+## - **Sistema de recomendacion de peliculas** :wink:
+## Tratamiento de campos usados para el modelo ML
 
 Para el sistema de recomendacion de peliculas tome del dataset limpio los campos title(titulo de la pelicula), name_actor(nombre de los actores de la pelicula) y overview(descripcion general de la pelicula), tome todos los actores de cada pelicula y los uni a una lista, cada pelicula contaba con los campos titulo, overview y lista de actores que la conforman,las lista de actores se unieron para que quedaron todos en un solo string asi: 
 ```python
@@ -50,13 +50,13 @@ campo_concat
 
 ## **Modelo machine learning**
 
-### NLP (Natural Language Processing)
+## NLP (Natural Language Processing)
 
 Es un campo de estudio dentro de la inteligencia artificial y la lingüística computacional que se centra en la interacción entre las computadoras y el lenguaje humano. El objetivo principal del NLP es permitir que las máquinas comprendan, interpreten y generen el lenguaje humano de manera natural.
 
 Preprocesamiento de texto: Aplica técnicas de preprocesamiento de texto para convertir el texto en un formato adecuado para el análisis. Esto puede incluir tokenización (dividir el texto en unidades más pequeñas, como palabras o frases), eliminación de stopwords (palabras comunes sin valor informativo) y normalización de palabras (por ejemplo, convertir palabras en su forma base, como "corriendo" a "correr").
 
-### Algoritmo utilizado: Similaridad del coseno
+## Algoritmo utilizado: Similaridad del coseno
 
 La similaridadd del coseno es una medida utilizada en el procesamiento del lenguaje natural y en la recuperación de información para determinar la similitud entre dos vectores de características. Se calcula utilizando el coseno del ángulo entre los vectores en un espacio vectorial.
 
@@ -64,7 +64,7 @@ El resultado de la similaridad del coseno es un valor entre -1 y 1. Un valor de 
 
 ![Similaridad coseno](/src/SIM_COSINE.png)
 
-
+## Scikit-Learn
 Se utilizo el modulo Scikit-learn y la clase TfidfVectorizer de sklearn para calcular la frecuencia de las palabras que aparecen en el campo tags y se ignoraron todas las palabras comunes del ingles(stopwords) ya que no aportar valor a mi modelamiento.
 
 <!-- ![Sklearn modulo](/src/skl.png) -->
@@ -97,7 +97,7 @@ Si se cuenta con recursos de maquina superiores la recomendacion es mas acertada
 Todo este proceso se encuentra en [Modelo ML](https://github.com/danser996/PI_DS/tree/master/code)
 
 ## **Desarrollo API**
-### API
+## API
 API es el acrónimo de "Application Programming Interface" (Interfaz de Programación de Aplicaciones). Se trata de un conjunto de reglas y protocolos que permite a diferentes aplicaciones y sistemas comunicarse e interactuar entre sí de manera estandarizada.
 
 Una API define las funciones y métodos que una aplicación proporciona para que otros programas puedan utilizar sus servicios y acceder a sus datos de manera controlada. Funciona como una capa de abstracción que permite a los desarrolladores utilizar ciertas funcionalidades de una aplicación o servicio sin necesidad de conocer todos los detalles internos de su implementación.
