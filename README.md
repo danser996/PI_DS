@@ -115,4 +115,4 @@ Una vez completada la implementación y las pruebas, la API fue desplegada en la
 
  ![Render](/src/RENDER.png)
 
-Toda el desarrollo de la API se encuentra en el [Repositorio de la API](https://github.com/danser996/PI_DS).
+Toda el desarrollo de la API se encuentra en el [Repositorio de la API](https://github.com/danser996/PI_DS_deploy).
