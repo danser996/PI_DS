@@ -42,6 +42,8 @@ El objetivo principal del análisis exploratorio de datos es obtener informació
 
 ![WC](/src/WORDCLOUD.png)
 
+    - Imagen generada a partir de las palabras mas recurrentes en el nombre de las peliculas del dataset
+
 Todo el analisis de este proyecto lo pueden encontrar en el notebook [EDA](https://github.com/danser996/PI_DS/blob/master/code/EDA.ipynb).
 
 ## - **Sistema de recomendacion de peliculas** :wink:
