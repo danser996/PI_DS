@@ -40,6 +40,8 @@ El análisis exploratorio de datos (EDA, por sus siglas en inglés, Exploratory 
 
 El objetivo principal del análisis exploratorio de datos es obtener información y conocimientos preliminares sobre los datos antes de aplicar técnicas más avanzadas de modelado o inferencia estadística. Proporciona una visión general de los datos y ayuda a formular preguntas de investigación, validar suposiciones y generar hipótesis.
 
+![WC](/src/WORDCLOUD.png)
+
 Todo el analisis de este proyecto lo pueden encontrar en el notebook [EDA](https://github.com/danser996/PI_DS/blob/master/code/EDA.ipynb).
 
 ## - **Sistema de recomendacion de peliculas** :wink:
