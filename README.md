@@ -16,7 +16,7 @@ A partir de 2 bases de datos no estructuradas de peliculas, se realizo el proces
 
 # - **Extracción, transformacion y carga - ETL**
 
-Cuento con 2 archivos csv.
+Cuento originalmente con 2 archivos csv y se encuentran en [Datasets](https://github.com/danser996/PI_DS/tree/master/Dataset).
 
 * movies: que es donde esta toda la informacion de la pelicula como, titulo, overview, gasto, ingresos, tiempo de duracion, genero, compañia que la desarrollo, paises donde fue grabada, idiomas a las que fue traducido, etc.
     
@@ -26,11 +26,21 @@ Mis datos cuentan con poca madurez(ok, es nula 😭): Datos anidados, sin transf
 
 Se empezo desde cero, haciendo un trabajo de Data Engineer 🤯, se inicia con el proceso ETL, consistiendo este en desanidar la informacion que esta contenida dentro de los diccionarios en algunos de los campos del dataset, se modelo a una base de datos relacional.
 
-Los dataset originales se encuentran alojados en [Datasets](https://github.com/danser996/PI_DS/tree/master/Dataset).
+Todo el proceso ETL se encuentra en [proceso ETL de dataset movies](https://github.com/danser996/PI_DS/blob/master/code/etl_movies.ipynb) y [proceso ETL de dataset credits](https://github.com/danser996/PI_DS/blob/master/code/etl_credits.ipynb).
 
-Todo el proceso ETL se encuentra en [proceso ETL](https://github.com/danser996/PI_DS/tree/master/code).
+La combinacion de las 2 bases de datos se hizo por medio de id de las peliculas y el proceso se encuentra en [Combinacion data](https://github.com/danser996/PI_DS/blob/master/code/data_combination.ipynb).
+
+La base de datos completamente tratada y limpia se encuentra en [Dataset_def](https://github.com/danser996/PI_DS/tree/master/Dataset_def) y el nombre es data_movies_full.zip
 
 <p align=center><img src=https://tableauperu.com/wp-content/uploads/2021/10/que-es-etl-1024x1024.png><p>
+
+## - **Analisis exploratorio de datos - EDA** 🌍
+
+El análisis exploratorio de datos (EDA, por sus siglas en inglés, Exploratory Data Analysis) es una etapa fundamental en el proceso de análisis de datos. Consiste en investigar y examinar un conjunto de datos para comprender su estructura, identificar patrones, descubrir relaciones entre variables y detectar posibles inconsistencias o anomalías.
+
+El objetivo principal del análisis exploratorio de datos es obtener información y conocimientos preliminares sobre los datos antes de aplicar técnicas más avanzadas de modelado o inferencia estadística. Proporciona una visión general de los datos y ayuda a formular preguntas de investigación, validar suposiciones y generar hipótesis.
+
+Todo el analisis de este proyecto lo pueden encontrar en el notebook [EDA](https://github.com/danser996/PI_DS/blob/master/code/EDA.ipynb).
 
 ## - **Sistema de recomendacion de peliculas** :wink:
 ## Tratamiento de campos usados para el modelo ML
@@ -94,7 +104,7 @@ Nota: El dataset completo es de 45000 peliculas, para la implementacion del algo
 
 Si se cuenta con recursos de maquina superiores la recomendacion es mas acertada. 
 
-Todo este proceso se encuentra en [Modelo ML](https://github.com/danser996/PI_DS/tree/master/code)
+Todo este proceso se encuentra en [Modelo ML](https://github.com/danser996/PI_DS/blob/master/code/MODEL_SIST_REC.ipynb)
 
 ## **Desarrollo API**
 ## API
@@ -107,6 +117,8 @@ Una API define las funciones y métodos que una aplicación proporciona para que
 
 ## FastAPI
 Para desarrollar la API, se optó por utilizar FastAPI, un framework rápido y eficiente en Python. Se hizo uso del potencial del DataFrame de Python para manipular y analizar los datos necesarios.
+
+El deploy se desarrollo en un repositorio diferente y todo el procedimiento se encuentra en [contruccion API](https://github.com/danser996/PI_DS_deploy)
 
 ![FastAPI](/src/FA.png)
 
