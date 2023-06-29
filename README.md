@@ -122,7 +122,7 @@ Una API define las funciones y métodos que una aplicación proporciona para que
 ## FastAPI
 Para desarrollar la API, se optó por utilizar FastAPI, un framework rápido y eficiente en Python. Se hizo uso del potencial del DataFrame de Python para manipular y analizar los datos necesarios.
 
-El deploy se desarrollo en un repositorio diferente y todo el procedimiento se encuentra en [contruccion API](https://github.com/danser996/PI_DS_deploy)
+Toda el desarrollo de la API se encuentra en el [Repositorio de la API](https://github.com/danser996/PI_DS_deploy).
 
 ![FastAPI](/src/FA.png)
 
@@ -131,4 +131,3 @@ Una vez completada la implementación y las pruebas, la API fue desplegada en la
 
  ![Render](/src/RENDER.png)
 
-Toda el desarrollo de la API se encuentra en el [Repositorio de la API](https://github.com/danser996/PI_DS_deploy).
